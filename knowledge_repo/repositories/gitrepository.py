@@ -506,6 +506,7 @@ class GitKnowledgeRepository(KnowledgeRepository):
 
     @property
     def __remote_available(self):
+        return True
         # TODO: support more types of hosts
         host = self.__remote_host
         port = self.__remote_port
